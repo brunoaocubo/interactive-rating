@@ -1,3 +1,123 @@
-.lista-rating button{
-   
+@import url('https://fonts.googleapis.com/css2?family=Overpass,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Orange500: hsl(25, 97%, 53%);
+    --White: hsl(0, 100%, 100%);
+    --Grey500: hsl(217, 12%, 63%);
+    --Grey900: hsl(213, 19%, 18%);
+    --Grey950: hsl(216, 12%, 8%);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    background-color: var(--Grey950);
+    color: var(--Grey500);
+    height: 100vh;
+    padding: 20px;
+}
+
+.card-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    min-width: 200px;
+    max-width: 450px;
+    height: max-content;
+    padding: 20px;
+    background-image: linear-gradient(var(--Grey900), hsl(216, 40%, 8%));
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+#logotipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey900);
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.400);
+    width: 50px;
+    height: 50px;
+}
+
+#titulo-principal, #titulo-secundario{
+    color: var(--White);
+    padding-block: 15px;
+}
+
+.texto{line-height: 1.6em;}
+
+.lista-rating{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    padding-block: 20px;
+}
+
+.rating{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--Grey500);
+    background-color: var(--Grey900);
+    border-style: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+.rating:hover{
+    background-color: var(--White);
+    color: var(--Grey950);
+}
+
+#submit{
+    align-self: center;
+    padding: 20px;
+    width: 100%;
+    background-color: var(--Orange500);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.200);
+    border: none;
+    cursor: pointer;
+}
+#submit:hover{background-color: var(--White);}
+
+#card-result-rating{
+    display: none;
+    align-items: center;
+}
+
+#logotipo-result{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#texto-resultado{
+    background-color: var(--Grey900);
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--Orange500);
+    margin-bottom: 10px;
+}
+
+.titulo-secundario{
+    
+}
+
+.texto-thankyou{
+    text-align: center;
+    padding-bottom: 20px;
 }

@@ -6,15 +6,14 @@
     <title>Notas de Avaliação</title>
     <link rel="stylesheet" href="css/mobile.css" media="all">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <section class="card-container">
-        <img src="images/icon-star.svg" alt="logotipo de estrela" id="logotipo">
-        <h1 class="titulo-principal">How did we do?</h1>
+    <section class="card-container" id="card-rating">
+        <div id="logotipo"><img src="images/icon-star.svg" alt="logotipo de estrela"></div>
+        <h1 id="titulo-principal">How did we do?</h1>
         <p class="texto">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-        <form action="#" method="post">
-            
-        </form>
+
         <ul class="lista-rating">
             <button type="button" value="1" class="rating" name="rating">1</button>
             <button type="button" value="2" class="rating" name="rating">2</button>
@@ -22,7 +21,13 @@
             <button type="button" value="4" class="rating" name="rating">4</button>
             <button type="button" value="5" class="rating" name="rating">5</button>
         </ul>
-        <input type="submit" value="SUBMIT" onclick="Avaliar()">
+        <input type="submit" value="Submit" onclick="Avaliar()" id="submit">
+    </section>
+    <section class="card-container" id="card-result-rating">
+        <div id="logotipo-result"><img src="images/illustration-thank-you.svg" alt="Obrigado"></div>
+        <p id="texto-resultado">You selected <span id="rating-result">0</span> out of 5</p>
+        <h2 id="titulo-secundario">Thank you!</h2>
+        <p class="texto texto-thankyou">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
     </section>
     <script src="js/script.js"></script>
 </body>
